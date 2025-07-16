@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+        *{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        h1{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-top: 1em;
+            margin-bottom: 2em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+
+        }
+        body{
+            padding:40px;
+            margin:40px; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+        }
+
+        form {
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+            background-color: rgb(204, 219, 241);
+            border-radius: 20px;
+            height: 35em;
+            width: 30em;
+            display: flex;
+            align-items:center;
+            flex-direction: column;
+        }
+         .form-control{
+            /* outline: 3px solid hsl(203,30%, 26%); */
+            border-radius: 5px;
+            border: 10px rgb(255, 207, 207);
+            height: 30px;
+            width: 25em;
+        
+        }
+         
+         .d-grid{
+            height: 40px;
+            width:200px;
+            cursor: pointer;
+            margin-top:40px;
+       
+        } 
+
+
+        h6{
+            text-align: center;
+            margin-top: 4em;
+            margin-bottom: 0;
+        }
+
+        .signup{
+            font-size:smaller;
+            margin-bottom: 0;
+            margin-top: 10px;
+            
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .Forgot{
+                display: block;
+                margin-right: 290px;
+                margin-top: 5px; /* adjust as needed */
+                color: #3498db; /* or any color */
+                text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <form>
+
+        <h1>Welcome Back</h1>
+        
+        <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+    </div>
+        <div class="form-floating mb-3">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+    </div>
+        <div class="Forgot">
+       <a href="" style="font-size: small;">Forgot Password</a></div>
+         <div class="d-grid gap-2 col-6 mx-auto">
+              <button class="btn btn-primary" type="button">Login</button>
+        </div>
+          <div>
+            <h4 class="signup">Not Have Account ?<a href="signup" >Sign up</a></h4>
+        </div> 
+
+         <div><h6>By Creating an account you agree to Tru Note <br><span>
+              <a href="loveyou">  Terms of services</a> and <a href="i">privacy policy</a> </h6></span></div>
+    </form>
+</body>
+
+</html>
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+
+    <style>
+        *{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .container{
+            max-width: 500px;
+            margin: 60px auto;
+            background: 20px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow:0 0 10px rgba(0,0,0,0.1) ;
+          
+        }
+
+        h1{
+            color: rgb(165, 248, 64);
+            font-size: 5em;
+            text-align: center;
+        }
+        .input-section{
+            display: flex;
+            margin-bottom: 20px;
+        }
+        input[type="text"]{
+            flex: 1;
+            padding: 10px;
+            font-size: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button{
+            padding:10px 15px;
+            margin-left: 10px;
+            background-color: #52bb4f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: #000000;
+        }
+
+        .Todo-list{
+            padding: 0;
+        }
+
+        .Todo-list li{
+             padding: 10px;
+             border:1px solid #eee;
+             display: flex;
+             align-items:center;
+        } 
+
+        .delete-all{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>To-do List</h1>
+
+        <div class="input-section">
+            <input type="text" placeholder="Add a new task">
+            <button>Add</button>
+        </div>
+
+        <ul class="Todo-list">
+           <li> <input type="checkbox">Practice Css </li>
+          <li> <input type="checkbox">Practice Java </li>
+           <li> <input type="checkbox">project on UI/UX design</li>
+            <li><input type="checkbox">Read Book</li>
+        </ul>
+
+        <div class="delete-all"><button>Delete All</button></div>
+
+
+    
